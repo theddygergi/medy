@@ -1,0 +1,50 @@
+input[type=text], select, textarea { /* styling of the text area  */
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+  
+input[type=submit] { /* styling of the submit button */
+  background-color: red;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+  
+input[type=submit]:hover { /* hover effect on the submit button */
+  background-color: black;
+}
+  
+.container {  /* styling of the image at the left */
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 10px;
+}
+  
+.column { 
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+  
+/* .row:after {
+  content: "";
+  display: table;
+  clear: both;
+} */
+
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+::placeholder{ /* aligns the placeholder to the left of the input type */
+  text-align:left; 
+}

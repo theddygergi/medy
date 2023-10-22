@@ -1,0 +1,87 @@
+* {
+    font-family: "Montserrat";
+    box-sizing:border-box;
+}
+body {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 2%, rgba(212,1,1,0.9108018207282913) 50%);
+    margin: 0;
+}
+.navbar {
+    top: 0;
+    width: 100%;
+    background-color: #000;
+    position: fixed;
+    z-index: 1;
+}
+
+.navbar a {
+    margin-right: 32px;
+    float: right;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+@media screen and (max-width: 500px) {
+.navbar a {
+    float: none;
+    display: block;
+}
+}
+
+.header-names:hover { /* the hover effect on the text of the navbar */
+    text-shadow: red -3px 0 , darkblue 3px 0;
+  } 
+
+
+@media screen and (max-width: 500px) {
+.navbar a {
+    float: none;
+    display: block;
+}
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img { /* styling of the products images */
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.column img:hover{ /* on hover the cursor changes its form to pointer */
+    cursor: pointer;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+.column {
+    flex: 50%;
+    max-width: 50%;
+}
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+.column {
+    flex: 100%;
+    max-width: 100%;
+}
+}
+
+.column img:hover { /* makes the images larger on hover with a transititon for more smootheness */
+  transform: scale(1.3); /* (130% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transition: 0.5s ease;
+} 

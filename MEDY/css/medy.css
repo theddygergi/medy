@@ -1,0 +1,133 @@
+* {
+    font-family: "Montserrat";
+    box-sizing:border-box; 
+}
+
+body {
+  background: linear-gradient(90deg, rgba(2,0,36,1) 2%, rgba(212,1,1,0.9108018207282913) 50%); /* creates the gradient color effect */
+  margin: 0; /* la taabe l ligne tabaa l navbar l sheshe kela ta ma yebea l spaces aa janab fadyin */
+}
+
+.navbar {
+  top: 0;
+  width: 100%;
+  background-color: #000; 
+  position: fixed; /* so that the navbar is fixed when we scroll in the website */
+  z-index: 1; /* to keep the navbar edem ba2we l osas li bl site when scrolling */
+}
+
+.navbar a {
+  margin-right: 32px;
+  float: right;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+
+.main-title {
+  color: #fff;
+  text-align: center;
+}
+
+@keyframes type { /* blinking animations of the main page */
+  0% {opacity: 0;}
+  50% {opacity: 0.5;}
+  100% {opacity: 1;}
+} 
+
+@media screen and (max-width: 500px) { /* responsiveness */
+  .navbar a {
+    float: none;
+    display: block;
+  } 
+}
+        
+.slideshow-container { 
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+} 
+
+.header-names:hover { /* the hover effect on the texts of the navbar **/
+  text-shadow: red -3px 0 , darkblue 3px 0;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+
+.row, /* adds spaces between each columns in the news section  */
+.row > .column {
+  padding: 8px;
+} 
+
+/* Create four equal columns that floats next to each other */
+ .column { /* displays the 4 images and their text in columns badel ma ykuno tahet baaed */
+  float: left;
+  width: 25%;
+  vertical-align: bottom;
+} 
+
+/* Clear floats after rows */
+ .row:after { /* eza ma mn hota bi dal fi a white background ben el columns  */
+  content: "";
+  display: table;
+  clear: both;
+} 
+
+/* Content */
+.content { /* the white background behind the pictures and text (news)*/
+  background-color: white;
+  padding: 10px;
+}
+
+.content img:hover { /* changes the cursor to a pointer when we hover over the image */
+    cursor: pointer;
+} 
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+h2{ /* changes the font size of the title at the top */
+  font-size: 40px; 
+}

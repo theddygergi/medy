@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/ihjoz.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="javascript/audio.js"></script>
+    <title>Reserve</title>
+    
+</head>
+<body>
+    <div class="navbar">
+        <a class="page-name" href="medy.html" style="float: left;"><span class="header-names">MEDY</span></a>
+        <a href="login-page.html" target="_blank"><i class="fa fa-fw fa-user"></i><span class="header-names">Login</span></a>
+        <a href="review.html" target="_blank"><i class="fa fa-fw fa-user"></i><span class="header-names">Contact Us</span></a>
+        <a href="products.html" target="_blank"><i class="fa fa-fw fa-plane"></i><span class="header-names">Store</span>
+        <a onclick="audio.play()" href="ticket.html" target="_blank"><i class="fa fa-fw fa-ticket"></i><span class="header-names">Tickets</span></a>
+    </div>
+    <br><br>
+    <div class="background-image">
+        <form class="container">
+            <br><br>
+          <h1 style="font-size: 24px;">Choose a grandstand</h1>
+            <br>
+          <label for="options"></label>
+          <input type="radio" name="grandstand" checked="checked">Main Grandstand<br>
+          <input type="radio" name="grandstand">University Grandstand<br>
+          <input type="radio" name="grandstand">Victory Grandstand<br>
+          <input type="radio" name="grandstand">Turn 1 Grandstand<br>
+          <input type="radio" name="grandstand">VIP tent<br>
+          <input type="radio" name="grandstand">Batelco <br>
+          <br><br><br><br>
+          <label for="nb-tickets"><h1 style="font-size: 24px;">Number of tickets</h1></label>
+          <span>First Wave: <span id=so>(Sold Out)</span></span>
+          <select disabled = "disabled">
+            <option>0</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+        </select>
+        <br>
+        Second Wave: 
+        <select style="margin-left: 110px;">
+            <option>0</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+        </select>
+        <br>
+        <span>Third Wave: <span id=cs>&nbsp; Coming Soon &nbsp;</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        <select style="margin-left: 109px;" id="tb" disabled="disables">
+            <option>0</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+        </select>
+        <br><br>
+          <button type="submit" class="submit">Continue</button>
+        </form>
+      </div>
+      <br>
+      
+</body>
+</html>

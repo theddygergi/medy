@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="css/login-page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Sign-Up</title>
+    <script src="https://kit.fontawesome.com/f6df791dfe.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="login-form">
+            <h1 id="title">Sign Up</h1>
+            <form>
+                <div class="input-data">
+                    <div class="input-field" id="name-field">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="Full Name">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" placeholder="Mail">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <p>Forgot password? <a href="#">Click Here</a></p>
+                </div>
+                <div class="button-field">
+                    <button type="button" id="sign-up">Sign Up</button>
+                    <button type="button" id="sign-in" class="disabled">Sign In</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="javascript/login-page.js"></script>
+</html>

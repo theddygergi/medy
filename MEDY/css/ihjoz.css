@@ -1,0 +1,89 @@
+* {
+    font-family: "Montserrat";
+    box-sizing:border-box;
+}
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 2%, rgba(212,1,1,0.9108018207282913) 50%);
+    margin: 0;
+}
+.navbar {
+    top: 0;
+    width: 100%;
+    background-color: #000;
+    position: fixed;
+}
+
+.navbar a {
+    margin-right: 32px;
+    float: right;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar a:hover {
+    background-color: #000;
+}
+
+@media screen and (max-width: 500px) {
+.navbar a {
+    float: none;
+    display: block;
+}
+} 
+  .background-image {
+    background-image: url("circuitmap-new.png");
+    min-height: 600px;
+    margin-left: 4px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .container {
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    max-width: 300px;
+    padding: 16px;
+    background-color: white;
+  }
+  
+  .submit {
+    background-color: red;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .submit:hover {
+    opacity: 1;
+  }
+  select {margin-left: 50px;}
+  input {
+      accent-color: red;
+  }
+
+  #so{ /* sold out text */
+    text-decoration: line-through red; /* adds the red line on the word sold out */
+  }
+
+#tb{ /* third select button to fix position maa l text*/
+  position:relative;
+  top:-20.5px;
+  right:-117px;
+}
+
+#cs{ /* coming soon text next to the third button */
+  color: white; 
+  font-size: 13px;
+  background-color:rgb(166, 118, 211);
+  opacity: 0.6;
+  border-radius: 14px;
+}
